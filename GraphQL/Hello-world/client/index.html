@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This is the doctype declaration for HTML5, which ensures that the 
+         document is interpreted as modern HTML -->
     <meta charset="UTF-8">
+    <!-- Sets the character encoding of the document to UTF-8, which is the most common character set -->
+    
+    <!-- The meta viewport tag ensures the page is properly scaled on mobile devices, 
+         making it responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title of the webpage, which is shown in the browser tab -->
     <title>GraphQL Client</title>
 </head>
 <body>
+   <!-- Main heading of the webpage -->
    <h1>GraphQL Client</h1> 
+
+   <!-- A paragraph that informs the user about the server response. 
+        The greeting message will be dynamically updated in the <strong> tag -->
    <p>
     The server says:
+    <!-- The <strong> tag is used to make the text bold. 
+         The 'id' attribute allows this element to be targeted in JavaScript for dynamic updates. 
+         Initially, the text shows "Loading..." until it is replaced with the actual server response -->
     <strong id="greeting">
         Loading...
     </strong>
    </p>
+
+   <!-- This script tag includes an external JavaScript file ('app.js'). 
+        This file will handle the interaction with the GraphQL server, 
+        such as sending queries and updating the content on the page -->
    <script src="app.js"></script>
 </body>
 </html>
