@@ -6,6 +6,7 @@ from PySide6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton, QTextEdit, QMessageBox
 )
 from PySide6.QtCore import Qt
+os.environ["QT_PLUGIN_PATH"] = r"D:\Users\u124935\OneDrive - Finance of America Holdings, LLC\Documents\_My Repos\PythonOOP\llm_chat_env\Lib\site-packages\PySide6\plugins"
 
 # Constants
 APP_TITLE = "LLM Chat"
@@ -135,7 +136,9 @@ class ChatScreen(QWidget):
 
 if __name__ == "__main__":
     # app = QApplication(sys.argv)
-    app = QApplication(D:\Users\u124935\OneDrive - Finance of America Holdings, LLC\Documents\_My Repos\PythonOOP\llm_chat_env\Lib\site-packages\PySide6\plugins\platforms
+    os.environ["QT_QPA_PLATFORM_PLUGIN_PATH"] = r"D:\Users\u124935\OneDrive - Finance of America Holdings, LLC\Documents\_My Projects\SNFL_Repo\CDAT_SLS\venvs\venvqr\Lib\site-packages\PyQt5\Qt5\plugins"
+
+    app = QApplication(sys.argv)
     if os.path.exists(CONFIG_FILE) and json.load(open(CONFIG_FILE)).get("api_key"):
         chat_screen = ChatScreen()
         chat_screen.show()
