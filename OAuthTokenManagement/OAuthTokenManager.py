@@ -6,7 +6,7 @@ class AccessTokenManager:
     """
     Manages OAuth 2.0 access tokens for the Client Credentials flow with Azure AD.
 
-    This class handles obtaining an initial access token and automatically refreshing
+    This class handles obtaining an initial access token and automatically refreshingwh
     it when it's near expiration, ensuring that API calls always use a valid token.
     """
 
